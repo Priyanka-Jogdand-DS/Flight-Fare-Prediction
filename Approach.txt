@@ -1,0 +1,35 @@
+ 
+Approach:
+
+1. Understanding problem statement 
+2. Hypothesis generation
+
+3. Loading the data
+4. Understanding the data
+5. Exploratoratory data analysis with univariate and bivariate
+6. Missing value and outlier treatment
+7. Evaluation metrics for classification problems 
+8.Model building
+
+
+Evaluation Metric:
+1. Root Mean Squared error (RMSE) and 
+\mathrm{RMSD} = \sqrt{\frac{\sum_{i=1}^{N}\left(x_{i}-\hat{x}_{i}\right)^{2}}{N}}
+\mathrm{RMSD}	=	root-mean-square deviation
+i	=	variable i
+{N}	=	number of non-missing data points
+x_{i}	=	actual observations time series
+\hat{x}_{i}	=	estimated time series
+
+2. R-squared:
+R^2 = 1 - \frac{RSS}{TSS}
+R^2	=	coefficient of determination
+RSS	=	sum of squares of residuals
+TSS	=	total sum of squares
+
+
+As the flight ticket prices are so unpredictable the Dataset was provided with prices of flight tickets for various airlines between the months of March and June of 2019 and between various cities. It was an regression problem where given a set of features we need to predict the price of ticket from one city to another.
+Since it is an regression problem we will use Root Mean Squared error (RMSE) and R-squared as regression metric.
+
+Based on the data points such as the name of the airline, date and timestamp of journey, duration, no of stops and price taken by perticular flight, it was possible to find insights which helped to predict Root mean squared error value 1494.7948390855377 and R-squared value 0.8916234839601243 with winning XGBRegressor classifier.
+
